@@ -20,6 +20,6 @@ Durante el siglo trascurrido tras su publicación, _El Cálculo hecho fácil_ ha
 
 Crédito es debido a Paula Appling, Don Bindner, Chris Curnow, y Andrew D. Hwang, miembros del [Equipo Distribuido de Corrección en Línea](http://www.pgdp.net) del Proyecto Gutenberg por la [edición inglesa de este libro electrónico](http://www.gutenberg.org/ebooks/33283) publicada en junio de 2012, y sobre la cual se basa esta traducción.
 
-Este libro es de dominio público en los Estados Unidos y la  traducción es hecha disponible bajo la [Licencia de Libros Electrónicos del Proyecto Gutenberg](www.gutenberg.org/license).
+Este libro es de dominio público en los Estados Unidos y la  traducción es hecha disponible bajo la [Licencia de Libros Electrónicos del Proyecto Gutenberg](http://www.gutenberg.org/license).
 
 Su colaboración es bienvenida, por favor póngase en contacto si desea contribuir a este proyecto.
