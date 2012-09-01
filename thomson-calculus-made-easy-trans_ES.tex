@@ -108,6 +108,9 @@
 \documentclass[12pt]{book}[2005/09/16]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fontspec}            %% Access system fonts
+\setmainfont{Minion Pro}         %% Custom main font
+
 \usepackage[latin1]{inputenc}[2006/05/05]
 
 \usepackage{ifthen}[2001/05/26]  %% Logical conditionals
@@ -975,7 +978,7 @@ Segunda Edición 1914.
 \thispagestyle{empty}
 \null\vfill
 \begin{quote}
-Aquello que un tonto puede hacer, otro también puede. \\
+Lo que un tonto puede hacer, otro puede también. \\
 \raggedleft(\textit{Antiguo Proverbio Simio.})
 \end{quote}
 \vfill
@@ -1000,114 +1003,91 @@ El autor reconoce con gratitud muchas sugerencias valiosas, y cartas recibidas d
 \tableofcontents
 \iffalse %%%% Original ToC text %%%%
 
-CONTENTS.
+CONTENIDOS.
 
-CHAPTER        PAGE
+CAPÍTULO        PÁGINA
 
-Prologue  xi
+Prólogo  xi
 
-I. To deliver you from the Preliminary Terrors   1
+I. Para redimirte de los Terrores Preliminares   1
 
-II. On Different Degrees of Smallness  3
+II. Sobre Distintos Grados de Pequeñez  3
 
-III. On Relative Growings   9
+III. Sobre Incrementos Relativos   9
 
-IV. Simplest Cases 18
+IV. Los Casos más Simples 18
 
-V. Next Stage. What to do with Constants  26
+V. Siguiente Paso. Qué hacer con las Constantes  26
 
-VI. Sums, Differences, Products, and Quotients  35
+VI. Sumas, Diferencias, Productos, y Cocientes  35
 
-VII. Successive Differentiation  49
+VII. Diferenciación Sucesiva  49
 
-VIII. When Time varies   52
+VIII. Cuando el Tiempo Varía   52
 
-IX. Introducing a Useful Dodge  67
+IX. Introduciendo un amago útil   67
 
-X. Geometrical Meaning of Differentiation 76
+X. Significado Geométrico de la Diferenciación 76
 
-XI. Maxima and Minima   93
+XI. Máxima y Mínima   93
 
-XII. Curvature of Curves   112
+XII. Curvatura de las Curvas   112
 
-XIII. Other Useful Dodges   121
+XIII. Otros amagos útiles   121
 
-XIV. On true Compound Interest and the Law of
-Organic Growth   134
+XIV. Sobre el Verdadero Interés Compuesto y la Ley del Crecimiento Orgánico   134
 
-XV. How to deal with Sines and Cosines  165
+XV. Cómo lidiar con los Senos y Cosenos  165
 
-XVI. Partial Differentiation  175
+XVI. Diferenciación Parcial  175
 
-XVII. Integration     182
+XVII. Integración     182
 
 \DPPageSep{010.png}{x}%
 
-XVIII. Integrating as the Reverse of Differentiating  191
+XVIII. La Integración como el Reverso de la Diferenciación  191
 
-XIX. On Finding Areas by Integrating  206
+XIX. Encontrar Áreas Integrando  206
 
-XX. Dodges, Pitfalls, and Triumphs   226
+XX. Amagos, Dificultades, y Triunfos   226
 
-XXI. Finding some Solutions  234
+XXI. Encontrando algunas Soluciones  234
 
-XXII. Epilogue and Apologue  249
+XXII. Epílogo y Apólogo  249
 
-Table of Standard Forms    252
+Tabla de Formatos Estándar    252
 
-Answers to Exercises  254
+Rspuestas a los Ejercicios  254
 
-\fi%%%% End of original ToC %%%%
+\fi%%%% Fin de la Tabla de Contenido Original %%%%
 \DPPageSep{011.png}{xi}%
 
 
-\AltChapter{Prologue}
+\AltChapter{Prólogo}
 
-\First{Considering} how many fools can calculate, it is
-surprising that it should be thought either a difficult
-or a tedious task for any other fool to learn how to
-master the same tricks.
+\First{Considerando} cuántos tontos pueden calcular, es sorprendente que el que otros tontos aprendan a dominar los mismos trucos sea considerado una labor difícil o tediosa.
 
-Some calculus-tricks are quite easy. Some are
-enormously difficult. The fools who write the textbooks
-of advanced mathematics---and they are mostly
-clever fools---seldom take the trouble to show you how
-easy the easy calculations are. On the contrary, they
-seem to desire to impress you with their tremendous
-cleverness by going about it in the most difficult way.
+Algunos trucos del Cálculos son bastante fáciles, y algunos enormemente difíciles. Los tontos que escriben los textos de matemática avanzada---quienes son, generalmente, tontos astutos---rara vez se toman el trabajo de mostrarte cuán fáciles son los cálculos. Por el contrario, pareciese que desearan impresionarte con su tremendo ingenio haciéndolos de la manera más difícil.
 
-Being myself a remarkably stupid fellow, I have
-had to unteach myself the difficulties, and now beg
-to present to my fellow fools the parts that are not
-hard. Master these thoroughly, and the rest will
-follow. What one fool can do, another can.
+Siendo yo mismo un tipo notablemente estúpido, he tenido que desaprender las dificultades, y me permito ahora presentar a mis colegas tontos aquellas partes que no son difíciles. Domina éstas de manera completa y el resto seguirá. Lo que un tonto puede hacer, otro puede también.
 \DPPageSep{012.png}{xii}%
 \DPPageSep{013.png}{1}%
 \mainmatter
 \phantomsection\pdfbookmark[-1]{Main Matter}{Main Matter}
 
 
-\Chapter{I}{To deliver you from the Preliminary Terrors}
+\Chapter{I}{Para redimirte de los Terrores Preliminares}
 
-\First{The} preliminary terror, which chokes off most fifth-form
-boys from even attempting to learn how to
-calculate, can be abolished once for all by simply stating
-what is the meaning---in common-sense terms---of the
-two principal symbols that are used in calculating.
+\First{El} terror preliminar, que impide a la mayoría de estudiantes tan siquiera intentar aprender a calcular, puede ser abolido de una vez y para siempre al exponer simplemente cuál es el significado---en términos asequibles al sentido común---de los dos símbolos principales usados al calcular.
 
-These dreadful symbols are:
+Estos símbolos terroríficos son:
 
-(1) $d$ which merely means ``a little bit of.''
+(1) $d$ que en realidad significa ``un poco de.''
 
-Thus $dx$ means a little bit of~$x$; or $du$ means a
-little bit of~$u$. Ordinary mathematicians think it
-more polite to say ``an element of,'' instead of ``a little
-bit of.'' Just as you please. But you will find that
-these little bits (or elements) may be considered to be
-indefinitely small.
+Por lo tanto $dx$ significa un poco de~$x$; o $du$ significa un poco de~$u$. Los matemáticos comunes consideran más cortés decir ``un elemento de,'' en lugar de ``un poquito de.'' Como prefieras. Pero encontrarás que tales pedacitos (o elementos) pueden ser considerados infinitamente pequeños.
 
-(2) $\ds\int$ which is merely a long $S$, and may be called
-(if you like) ``the sum of.''
+(2) $\ds\int$ que es simplemente una $S$ larga, y se le puede llamar
+(si te place) ``la suma de.''
 
 Thus $\ds\int dx$ means the sum of all the little bits
 of~$x$; or $\ds\int dt$ means the sum of all the little bits
