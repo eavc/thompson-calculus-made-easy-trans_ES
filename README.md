@@ -10,7 +10,7 @@ Credit for the [English edition of this ebook](http://www.gutenberg.org/ebooks/3
 
 This translation is released under the [Project Gutenberg Ebook License](www.gutenberg.org/license).
 
-Collaboration is encouraged, please do get in touch should you want to contribute to this project .
+As this is a work in progress, collaboration is encouraged. Please do get in touch should you want to contribute to this project.
 
 ***
 
@@ -22,4 +22,4 @@ Crédito es debido a Paula Appling, Don Bindner, Chris Curnow, y Andrew D. Hwang
 
 Este libro es de dominio público en los Estados Unidos y la  traducción es hecha disponible bajo la [Licencia de Libros Electrónicos del Proyecto Gutenberg](http://www.gutenberg.org/license).
 
-Su colaboración es bienvenida, por favor póngase en contacto si desea contribuir a este proyecto.
+Dado que este es un proyecto en progreso, su colaboración es bienvenida. Por favor póngase en contacto si desea contribuir.
