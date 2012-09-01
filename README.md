@@ -11,6 +11,7 @@ This translation is released under the Project Gutenberg Ebook License.
 
 Please do get in touch should you want to contribute to this project.
 
+*-*-*-*-*-*-*-*-*
 
 Ésta es la traducción al castellano de _El Cálculo hecho fácil: Siendo una simplícima introducción a los bellos métodos generalmente denominados con el pavoroso nombre de el Diferencial_ (2da edición ampliada, 1914), el libro clásico de [Silvanus P. Thompson, FRS](http://en.wikipedia.org/wiki/Silvanus_P._Thompson) (1881-1916).
 
