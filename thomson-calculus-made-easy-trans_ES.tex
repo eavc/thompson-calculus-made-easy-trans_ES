@@ -109,7 +109,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fontspec}            %% Access system fonts
-\setmainfont{Minion Pro}         %% Custom main font
+\defaultfontfeatures{Ligatures={TeX}}
+\setmainfont{Minion Pro}         %% Custom main font, fix ligatures
 
 \usepackage[latin1]{inputenc}[2006/05/05]
 
@@ -209,10 +210,10 @@
 % \usepackage[body={5.25in,8.4in},\Margins]{geometry}[2002/07/08]
 
 \providecommand{\ebook}{00000}    % Overridden during white-washing
-\usepackage[pdftex,
+\usepackage[   % no pdftex
   hyperref,
   hyperfootnotes=false,
-  pdftitle={eBook del Projecto Gutenberg \#\ebook: Cálculo hecho fácil, segunda edición},
+  pdftitle={eBook del Projecto Gutenberg \#\ebook: Calculo hecho fácil, segunda edición},
   pdfauthor={Silvanus Phillips Thompson},
   pdfkeywords={Basado en la versión de Paula Appling, Don Bindner, Chris Curnow, Andrew D. Hwang,
                Project Gutenberg Online Distributed Proofreading Team},
@@ -1067,18 +1068,18 @@ Rspuestas a los Ejercicios  254
 
 \First{Considerando} cuántos tontos pueden calcular, es sorprendente que el que otros tontos aprendan a dominar los mismos trucos sea considerado una labor difícil o tediosa.
 
-Algunos trucos del Cálculos son bastante fáciles, y algunos enormemente difíciles. Los tontos que escriben los textos de matemática avanzada---quienes son, generalmente, tontos astutos---rara vez se toman el trabajo de mostrarte cuán fáciles son los cálculos. Por el contrario, pareciese que desearan impresionarte con su tremendo ingenio haciéndolos de la manera más difícil.
+Algunos trucos del Cálculo son bastante fáciles, y algunos enormemente difíciles. Los tontos que escriben los textos de matemática avanzada---y quienes son, generalmente, tontos astutos---rara vez se toman el trabajo de mostrarte cuán fáciles son los cálculos. Por el contrario, pareciese que desearan impresionarte con su tremendo ingenio haciéndolos de la manera más difícil.
 
-Siendo yo mismo un tipo notablemente estúpido, he tenido que desaprender las dificultades, y me permito ahora presentar a mis colegas tontos aquellas partes que no son difíciles. Domina éstas de manera completa y el resto seguirá. Lo que un tonto puede hacer, otro puede también.
+Siendo yo mismo un tipo notablemente estúpido, he tenido que desaprender las dificultades, y me permito ahora presentar a mis colegas tontos aquellas partes que no son difíciles. Domina éstas de manera completa y el resto le seguirá. Lo que un tonto puede hacer, otro puede también.
 \DPPageSep{012.png}{xii}%
 \DPPageSep{013.png}{1}%
 \mainmatter
 \phantomsection\pdfbookmark[-1]{Main Matter}{Main Matter}
 
 
-\Chapter{I}{Para redimirte de los Terrores Preliminares}
+\Chapter[PARA REDIMIRTE DE LOS TERRORES PRELIMINARES]{I}{Para redimirte de los Terrores Preliminares}
 
-\First{El} terror preliminar, que impide a la mayoría de estudiantes tan siquiera intentar aprender a calcular, puede ser abolido de una vez y para siempre al exponer simplemente cuál es el significado---en términos asequibles al sentido común---de los dos símbolos principales usados al calcular.
+\First{El} terror preliminar, que impide a la mayoría de estudiantes tan siquiera intentar aprender a calcular, puede ser abolido de una vez y para siempre simplemente exponiendo cuál es el significado---en términos asequibles al sentido común---de los dos símbolos principales usados al calcular.
 
 Estos símbolos terroríficos son:
 
@@ -1089,29 +1090,13 @@ Por lo tanto $dx$ significa un poco de~$x$; o $du$ significa un poco de~$u$. Los
 (2) $\ds\int$ que es simplemente una $S$ larga, y se le puede llamar
 (si te place) ``la suma de.''
 
-Thus $\ds\int dx$ means the sum of all the little bits
-of~$x$; or $\ds\int dt$ means the sum of all the little bits
-of~$t$. Ordinary mathematicians call this symbol ``the
+Por lo tanto $\ds\int dx$ significa la suma de todos los pedacitos de~$x$; o $\ds\int dt$ significa la suma de todos los pedacitos de~$t$. Los matemáticos comunes llaman a este símbolo ``el
 \DPPageSep{014.png}{2}%
-integral of.'' Now any fool can see that if $x$~is
-considered as made up of a lot of little bits, each of
-which is called~$dx$, if you add them all up together
-you get the sum of all the~$dx$'s, (which is the same
-thing as the whole of~$x$). The word ``integral'' simply
-means ``the whole.'' If you think of the duration
-of time for one hour, you may (if you like) think of
-it as cut up into $3600$ little bits called seconds. The
-whole of the $3600$ little bits added up together make
-one hour.
+integral de.'' Ahora bien, cualquier tonto puede ver que si se considera a $x$~como compuesto por una multitud de pedacitos, cada uno de los cuales es llamado ~$dx$, si los añades todos juntos obtinees la suma de todos los ~$dx$'s, (que es lo mismo que la totalidad de~$x$). La palabra ``integral'' simplemente quiere decir ``la totalidad.'' Si piensas en la duración del tiempo en una hora puedes (si así lo deseas) concebirlo como cortado en $3600$ pedacitos llamados segundos. La totalidad de los $3600$ pedacitos sumados juntos componen una hora.
 
-When you see an expression that begins with this
-terrifying symbol, you will henceforth know that it
-is put there merely to give you instructions that you
-are now to perform the operation (if you can) of
-totalling up all the little bits that are indicated by
-the symbols that follow.
+De ahora en adelante, cuando veas una expresión que comienza con este símbolo aterrorizante, sabrás que ha sido puesto ahí símplemente para indicarte que a continuación debes (si puedes) hacer la operación de totalizar todos los pedacitos que se indican en los símbolos que siguen a continuación.
 
-That's all.
+Eso es todo.
 \DPPageSep{015.png}{3}%
 
 
