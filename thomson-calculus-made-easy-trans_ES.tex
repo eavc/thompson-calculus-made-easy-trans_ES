@@ -108,11 +108,11 @@
 \documentclass[12pt]{book}[2005/09/16]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fontspec}            %% Access system fonts
+\usepackage[latin1]{inputenc}[2006/05/05]
+
+\usepackage{xltxtra,fontspec,xunicode}            %% Access system fonts
 \defaultfontfeatures{Ligatures={TeX}}
 \setmainfont{Minion Pro}         %% Custom main font, fix ligatures
-
-\usepackage[latin1]{inputenc}[2006/05/05]
 
 \usepackage{ifthen}[2001/05/26]  %% Logical conditionals
 
@@ -210,12 +210,12 @@
 % \usepackage[body={5.25in,8.4in},\Margins]{geometry}[2002/07/08]
 
 \providecommand{\ebook}{00000}    % Overridden during white-washing
-\usepackage[   % no pdftex
+\usepackage[%pdftex,
   hyperref,
   hyperfootnotes=false,
-  pdftitle={eBook del Projecto Gutenberg \#\ebook: Calculo hecho fácil, segunda edición},
+  pdftitle={The Project Gutenberg eBook \#\ebook: Calculus Made Easy, 2nd Edition},
   pdfauthor={Silvanus Phillips Thompson},
-  pdfkeywords={Basado en la versión de Paula Appling, Don Bindner, Chris Curnow, Andrew D. Hwang,
+  pdfkeywords={Paula Appling, Don Bindner, Chris Curnow, Andrew D. Hwang,
                Project Gutenberg Online Distributed Proofreading Team},
   pdfstartview=Fit,    % default value
   pdfstartpage=1,      % default value
@@ -258,26 +258,29 @@
 }
 
 \newcommand{\Corrections}{%
-  Los diagramas han sido recreados usando fórmulas o descripciones 
-  del texto siempre que ha sido posible.
+  The diagrams have been re-created, using accompanying formulas or
+  descriptions from the text where possible.
   \bigskip
 
-  En el Capítulo~XIV, páginas \Pageref[]{erratum0}--\Pageref[]{erratum0a}, 
-  los valores numéricos de $\left(1+\frac{1}{n}\right)^n$, $\epsilon^x$,
-  y las cantidades correspondientes de moneda inglesa han sido verificados y redondeados al dígito más cercano.
+  In Chapter~XIV, pages \Pageref[]{erratum0}--\Pageref[]{erratum0a},
+  numerical values of $\left(1+\frac{1}{n}\right)^n$, $\epsilon^x$,
+  and related quantities of British currency have been verified and
+  rounded to the nearest digit.
   \bigskip
 
-  En la \Pageref[page]{erratum1} (página~146 del original), 
-las gráficas del logaritmo natural y la función exponencial, Figuras 38~y~39, han sido intercambiadas para corresponder con el texto adyacente.
+  On \Pageref[page]{erratum1} (page~146 in the original), the graphs
+  of the natural logarithm and exponential functions, Figures
+  38~and~39, have been interchanged to match the surrounding text.
   \medskip
 
-  Las líneas 
   The vertical dashed lines in the natural logarithm graph, Figure~39
   (Figure~38 in the original), have been moved to match the data in
   the corresponding table.
   \bigskip
 
-  En la \Pageref[page]{erratum2} (página~167 del original), las figuras de las funciones seno y coseno, Figuras 44~y~45, han sido intercambiadas con el fin de corresponder con el texto que las rodea.
+  On \Pageref[page]{erratum2} (page~167 in the original), the graphs
+  of the sine and cosine functions, Figures 44~and~45, have been
+  interchanged to match the surrounding text.
 }
 
 % Misc text formatting tricks
@@ -353,7 +356,7 @@ las gráficas del logaritmo natural y la función exponencial, Figuras 38~y~39, 
 % Redefine headings for table of contents & index
 \renewcommand{\contentsname}{%
   \protect\Large\protect\normalfont\protect\centering%
-  CONTENTS.\\
+  CONTENIDOS.\\
 }
 
 \newcommand{\ToCBox}[1]{%
@@ -848,23 +851,33 @@ DP@rint:#1\endcsname\relax\phantom
 \begin{minipage}{\textwidth}
 \small
 \begin{PGtext}
-Proyecto Gutenberg: Versión electrónica del libro El Cálculo hecho fácil, por Silvanus Thompson
+Proyecto Gutenberg: Versión electrónica del libro 
+El Cálculo hecho fácil, por Silvanus Thompson
 
-Éste libro es para uso de cualquiera, en cualquier lugar, sin costo alguno, y prácticamente sin restricciones. Usted puede copiarlo, regalarlo, o reusarlo bajo los términos de la licencia del Proyecto Gutenberg incluída con este libro electrónico o disponible en línea en www.gutenberg.org
+Éste libro es para uso de cualquiera, en cualquier 
+lugar, sin costo alguno, y prácticamente sin 
+restricciones. Usted puede copiarlo, regalarlo, 
+o reusarlo bajo los términos de la licencia del 
+Proyecto Gutenberg incluída con este libro electrónico 
+o disponible en línea en www.gutenberg.org
 
 
 Título: El Cálculo hecho fácil
-       Siendo una simplícima introducción a los bellos métodos generalmente denominados con el pavoroso nombre de el Diferencial
+       Siendo una simplícima introducción a los 
+       bellos métodos generalmente denominados 
+       con el pavoroso nombre de Diferencial
 
 Autor: Silvanus Thompson
 
-Fecha de publicación (versión inglesa): Junio 18, 2012 [EBook #33283]
+Fecha de publicación (versión inglesa): Junio 18, 2012 
+[EBook #33283]
 
 Lenguaje: Castellano
 
 Codificación del conjunto de caracteres: UTF-8
 
-*** INICIO DEL LIBRO ELECTRÓNICO DEL PROYECTO GUTENBERG EL CÁLCULO HECHO FÁCIL ***
+*** INICIO DEL LIBRO ELECTRÓNICO DEL PROYECTO GUTENBERG 
+EL CÁLCULO HECHO FÁCIL ***
 \end{PGtext}
 \end{minipage}
 \end{center}
@@ -876,7 +889,11 @@ Codificación del conjunto de caracteres: UTF-8
 \begin{center}
 \begin{minipage}{\textwidth}
 \begin{PGtext}
-Producido por Andrew D. Hwang, Brenda Lewis y el Equipo de Corrección Distribuída en Línea en http://www.pgdp.net (Este archivo ha sido producido mediante imágenes generosamente hechas disponibles por The Internet Archive/American Libraries.)
+Producido por Andrew D. Hwang, Brenda Lewis y el 
+Equipo de Corrección Distribuída en Línea en 
+http://www.pgdp.net (Este archivo ha sido producido 
+mediante imágenes generosamente hechas disponibles 
+por The Internet Archive/American Libraries.)
 \end{PGtext}
 \end{minipage}
 \end{center}
@@ -894,7 +911,7 @@ Producido por Andrew D. Hwang, Brenda Lewis y el Equipo de Corrección Distribu�
 \null\vfill
 \thispagestyle{empty}
 \begin{center}
-\Huge CÁLCULO HECHO FÁCIL
+\Huge EL CÁLCULO HECHO FÁCIL
 \end{center}
 \vfill
 \DPPageSep{002.png}{ii}%
@@ -933,8 +950,8 @@ DALLAS : SAN FRANCISCO \\[3\MySkip]
 
 \normalsize\settowidth{\TmpLen}{AQUELLOS BELLOS MÉTODOS DE ESTIMACIÓN }%
 \SetBox{SIENDO UNA SIMPLÍCIMA INTRODUCCIÓN A} \\
-\SetBox{AQUELLOS BELLOS MÉTODOS DE ESTIMACIÓN} \\
-\SetBox{GENERALMENTE DENOMINADOS MEDIANTE LOS} \\
+\SetBox{LOS BELLOS MÉTODOS DE ESTIMACIÓN} \\
+\SetBox{GENERALMENTE LLAMADOS CON LOS} \\
 \SetBox[c]{PAVOROSOS NOMBRES DE}
 \vspace{2\MySkip}
 
@@ -948,6 +965,9 @@ DALLAS : SAN FRANCISCO \\[3\MySkip]
 \vfill\vfill
 
 \textit{\large SEGUNDA EDICIÓN, AMPLIADA}
+\vfill\vfill\vfill\vfill
+
+\textit{\small Traducido por Enrique A. Velasco-Castillo}
 \vfill\vfill\vfill\vfill
 
 \large\settowidth{\TmpLen}{ST. MARTIN'S STREET, LONDON}%
@@ -979,7 +999,7 @@ Segunda Edición 1914.
 \thispagestyle{empty}
 \null\vfill
 \begin{quote}
-Lo que un tonto puede hacer, otro puede también. \\
+Lo que un tonto puede hacer, otro también puede. \\
 \raggedleft(\textit{Antiguo Proverbio Simio.})
 \end{quote}
 \vfill
@@ -990,9 +1010,14 @@ Lo que un tonto puede hacer, otro puede también. \\
 
 \ChapterStar[Preface]{Prefacio a la Segunda Edición}
 
-\First{El} sorprendente éxito de esta obra ha conducido al autor a añadir un número considerable de ejemplos y ejercicios resueltos. Se ha tomado ventaja de expandir ciertas partes en aquellas circunstancias en que la experiencia ha demostrado que explicaciones adicionales serían de utilidad.
+\First{El} sorprendente éxito de esta obra ha conducido al autor 
+a añadir un número considerable de ejemplos y ejercicios resueltos. 
+Se ha tomado ventaja de expandir ciertas partes en aquellas 
+circunstancias en que la experiencia ha demostrado que 
+las explicaciones adicionales serían de utilidad.
 
-El autor reconoce con gratitud muchas sugerencias valiosas, y cartas recibidas de profesores, estudiantes, y... críticos.
+El autor reconoce con gratitud muchas sugerencias valiosas, 
+y cartas recibidas de profesores, estudiantes, y... críticos.
 
 \medskip
 \emph{Octubre}, 1914.
@@ -1066,205 +1091,251 @@ Rspuestas a los Ejercicios  254
 
 \AltChapter{Prólogo}
 
-\First{Considerando} cuántos tontos pueden calcular, es sorprendente que el que otros tontos aprendan a dominar los mismos trucos sea considerado una labor difícil o tediosa.
+\First{Considerando} cuántos tontos pueden calcular, es 
+sorprendente que el que otros tontos aprendan a dominar 
+los mismos trucos sea considerado una labor difícil o tediosa.
 
-Algunos trucos del Cálculo son bastante fáciles, y algunos enormemente difíciles. Los tontos que escriben los textos de matemática avanzada---y quienes son, generalmente, tontos astutos---rara vez se toman el trabajo de mostrarte cuán fáciles son los cálculos. Por el contrario, pareciese que desearan impresionarte con su tremendo ingenio haciéndolos de la manera más difícil.
+Algunos trucos del Cálculo son bastante fáciles, y algunos 
+enormemente difíciles. Los tontos que escriben los textos de 
+matemática avanzada---y quienes son, generalmente, tontos 
+astutos---rara vez se toman la molestia de mostrar cuán fáciles 
+son los cálculos. Por el contrario, pareciese que desearan 
+impresionar con su tremendo ingenio haciéndolos de la manera 
+más difícil.
 
-Siendo yo mismo un tipo notablemente estúpido, he tenido que desaprender las dificultades, y me permito ahora presentar a mis colegas tontos aquellas partes que no son difíciles. Domina éstas de manera completa y el resto le seguirá. Lo que un tonto puede hacer, otro puede también.
+Siendo yo mismo un tipo notablemente estúpido, he tenido que 
+desaprender las dificultades, y me permito ahora presentar a 
+mis colegas tontos aquellas partes que no son difíciles. Domina 
+éstas de manera completa y el resto le seguirá. 
+
+Lo que un tonto puede hacer, otro también puede.
 \DPPageSep{012.png}{xii}%
 \DPPageSep{013.png}{1}%
 \mainmatter
 \phantomsection\pdfbookmark[-1]{Main Matter}{Main Matter}
 
 
-\Chapter[PARA REDIMIRTE DE LOS TERRORES PRELIMINARES]{I}{Para redimirte de los Terrores Preliminares}
+\Chapter[PARA REDIMIRTE DE LOS TERRORES PRELIMINARES]{I}{Para redimirte 
+de los Terrores Preliminares}
 
-\First{El} terror preliminar, que impide a la mayoría de estudiantes tan siquiera intentar aprender a calcular, puede ser abolido de una vez y para siempre simplemente exponiendo cuál es el significado---en términos asequibles al sentido común---de los dos símbolos principales usados al calcular.
+\First{El} terror preliminar, que impide a la 
+mayoría de estudiantes tan siquiera intentar 
+aprender a calcular, puede ser abolido de una 
+vez y para siempre simplemente exponiendo cuál 
+es el significado---en términos asequibles al 
+sentido común---de los dos símbolos principales 
+usados al calcular.
 
 Estos símbolos terroríficos son:
 
 (1) $d$ que en realidad significa ``un poco de.''
 
-Por lo tanto $dx$ significa un poco de~$x$; o $du$ significa un poco de~$u$. Los matemáticos comunes consideran más cortés decir ``un elemento de,'' en lugar de ``un poquito de.'' Como prefieras. Pero encontrarás que tales pedacitos (o elementos) pueden ser considerados infinitamente pequeños.
+Por lo tanto $dx$ significa un poco de~$x$; o $du$ 
+significa un poco de~$u$. Los matemáticos comunes 
+consideran más cortés decir ``un elemento de,'' en 
+lugar de ``un poquito de.'' Como prefieras. Pero 
+encontrarás que tales pedacitos (o elementos) pueden 
+ser considerados infinitamente pequeños.
 
-(2) $\ds\int$ que es simplemente una $S$ larga, y se le puede llamar
-(si te place) ``la suma de.''
+(2) $\ds\int$ que es simplemente una $S$ larga, y se 
+le puede llamar (si te place) ``la suma de.''
 
-Por lo tanto $\ds\int dx$ significa la suma de todos los pedacitos de~$x$; o $\ds\int dt$ significa la suma de todos los pedacitos de~$t$. Los matemáticos comunes llaman a este símbolo ``el
+Por lo tanto $\ds\int dx$ significa la suma de todos 
+los pedacitos de~$x$; o $\ds\int dt$ significa la suma 
+de todos los pedacitos de~$t$. Los matemáticos comunes 
+llaman a este símbolo ``el
 \DPPageSep{014.png}{2}%
-integral de.'' Ahora bien, cualquier tonto puede ver que si se considera a $x$~como compuesto por una multitud de pedacitos, cada uno de los cuales es llamado ~$dx$, si los añades todos juntos obtinees la suma de todos los ~$dx$'s, (que es lo mismo que la totalidad de~$x$). La palabra ``integral'' simplemente quiere decir ``la totalidad.'' Si piensas en la duración del tiempo en una hora puedes (si así lo deseas) concebirlo como cortado en $3600$ pedacitos llamados segundos. La totalidad de los $3600$ pedacitos sumados juntos componen una hora.
+integral de.'' Ahora bien, cualquier tonto puede ver que 
+si se considera a $x$~como compuesto por una multitud de 
+pedacitos, cada uno de los cuales es llamado ~$dx$, si los 
+añades todos juntos obtienes la suma de todos los ~$dx$'s, 
+(que es lo mismo que la totalidad de~$x$). La palabra 
+``integral'' simplemente quiere decir ``la totalidad.'' 
+Si piensas en la duración del tiempo en una hora puedes 
+(si así lo deseas) concebirlo como cortado en $3600$ 
+pedacitos llamados segundos. La totalidad de los $3600$ 
+pedacitos sumados juntos componen una hora.
 
-De ahora en adelante, cuando veas una expresión que comienza con este símbolo aterrorizante, sabrás que ha sido puesto ahí símplemente para indicarte que a continuación debes (si puedes) hacer la operación de totalizar todos los pedacitos que se indican en los símbolos que siguen a continuación.
+De ahora en adelante, cuando veas una expresión que 
+comienza con este símbolo aterrorizante, sabrás que 
+ha sido puesto ahí símplemente para indicarte que a 
+continuación debes (si puedes) hacer la operación de 
+totalizar todos los pedacitos que se indican en los 
+símbolos que siguen a continuación.
 
 Eso es todo.
 \DPPageSep{015.png}{3}%
 
 
-\Chapter[DIFFERENT DEGREES OF SMALLNESS]
-{II}{On Different Degrees of Smallness}
+\Chapter[DISTINTOS GRADOS DE PEQUEÑEZ]
+{II}{Sobre Distintos Grados de Pequeñez}
 
-\First{We} shall find that in our processes of calculation we
-have to deal with small quantities of various degrees
-of smallness.
+\First{Encontraremos} que en nuestros procesos de 
+cálculo tenemos que lidiar con pequeñas cantidades 
+de distintos grados de pequeñez.
 
-We shall have also to learn under what circumstances
-we may consider small quantities to be so minute
-that we may omit them from consideration. Everything
-depends upon relative minuteness.
+Tambien deberemos aprender bajo qué circunstancias 
+pequeñas cantidades pueden ser consideradas como tan 
+pequeñas que podemos omitirlas de nuestra consideración.
+Todo depende de la pequeñez relativa.
 
-Before we fix any rules let us think of some
-familiar cases. There are $60$~minutes in the hour,
-$24$~hours in the day, $7$~days in the week. There are
-therefore $1440$~minutes in the day and $10080$~minutes
-in the week.
+Antes de fijar cualquier regla, consideremos algunos casos
+familiares. Hay  $60$~minutos en una hora,
+$24$~horas en un día, $7$~días en una semana. Hay, por tanto, 
+unos $1440$~minutos en el día y $10080$~minutos en la semana.
 
-Obviously $1$~minute is a very small quantity of
-time compared with a whole week. Indeed, our
-forefathers considered it small as compared with an
+Obviamente $1$~minuto es una cantidad muy pequeña de tiempo 
+en comparación con una semana. En efecto, nuestros 
+ancestros lo consideraban muy pequeño en comparación con una 
 % [** TN: [sic] accent, though "minùte" seems to be neither French nor Latin]
-hour, and called it ``one minùte,'' meaning a minute
-fraction---namely one sixtieth---of an hour. When
-they came to require still smaller subdivisions of time,
-they divided each minute into $60$ still smaller parts,
-which, in Queen Elizabeth's days, they called ``second
-minùtes''\DPnote{** TN: [sic]} (\IE~small quantities of the second order of
-minuteness). Nowadays we call these small quantities
+hora, y lo llamaron ``un minùte,'' queriendo decir una
+fracción diminuta---de hecho una sexagésima parte---de una hora. 
+Cuando empezaron a requerir divisiones de tiempo aún más pequeñas,
+dividieron cada minuto en $60$ partes aún más pequeñas,
+las cuales, en tiempos de la Reina Elizabeth, llamaron ``segundos
+minùtes''\DPnote{** TN: [sic]} (\IE~pequeñas cantidades del segundo orden de minucia). Hoy en día a estas pequeñas cantidades 
 \DPPageSep{016.png}{4}%
-of the second order of smallness ``seconds.'' But few
-people know \emph{why} they are so called.
+del segundo órden de minucia las llamamos ``segundos.'' Pero pocas
+personas saben \emph{por qué} se les llama de esa manera.
 
-Now if one minute is so small as compared with a
-whole day, how much smaller by comparison is one
-second!
+Ahora bien, si un minuto es tan pequeño en comparación con un 
+día completo, ¡cuánto más pequeño aún es un segundo!
 
-Again, think of a farthing as compared with a
-sovereign: it is barely worth more than $\frac{1}{1000}$ part.
-A farthing more or less is of precious little importance
-compared with a sovereign: it may certainly be regarded
-as a \emph{small} quantity. But compare a farthing
-with £$1000$: relatively to this greater sum, the
-farthing is of no more importance than $\frac{1}{1000}$ of a
-farthing would be to a sovereign. Even a golden
-sovereign is relatively a negligible quantity in the
-wealth of a millionaire.
+% Modernise farthing example? what could be a comparable monetary proportion?
+De nuevo, piensa en cómo se compara un \emph{farthing} (el antiguo 
+cuarto de penique inglés) con un soberano de oro: 
+es a duras penas más valioso que la $\frac{1}{1000}$ parte.
+Un farthing es de mínima importancia en 
+comparación con un soberano: puede con certeza ser considerado 
+como una  cantidad \emph{pequeña}. Pero compárese un farthing
+con £$1000$: en relación con esta gran cantidad, el 
+farthing es de no mayor importancia que la $\frac{1}{1000}$ parte de un 
+farthing sería en comparación con un soberano. Incluso un soberano
+de oro es una cantidad relativamente insignificante comparada
+con la riqueza de un millonario.
 
-Now if we fix upon any numerical fraction as
-constituting the proportion which for any purpose
-we call relatively small, we can easily state other
-fractions of a higher degree of smallness. Thus if,
-for the purpose of time, $\frac{1}{60}$ be called a \emph{small} fraction,
-then $\frac{1}{60}$ of $\frac{1}{60}$ (being a \emph{small} fraction of a \emph{small}
-fraction) may be regarded as a \emph{small quantity of the
-second order}\Pagelabel{smallness} of smallness.\footnote
-  {The mathematicians talk about the second order of ``magnitude''
-  (\IE~greatness) when they really mean second order of \emph{smallness}.
-  This is very confusing to beginners.}
+Ahora bien, si nos fijamos en cualquier fracción numérica
+que constituye la proporción que para cualquier propósito 
+denominamos relativamente pequeña, nos es posible fácilmente 
+enunciar otras fracciones con un grado más alto de pequeñez. 
+Por lo tanto si, a propósito del tiempo, se le puede llamar 
+a $\frac{1}{60}$ una fracción \emph{pequeña},
+entonces $\frac{1}{60}$ de $\frac{1}{60}$ (siendo una \emph{pequeña} 
+fracción de una \emph{pequeña} fracción) puede ser considerado 
+como una  \emph{pequeña cantidad del segundo órden}\Pagelabel{pequeñez} de pequeñez.\footnote
+  {Los matemáticos hablan del segundo órden de ``magnitud''
+  (\IE~grandeza) cuando lo que realmente quieren decir es el segundo 
+  órden de \emph{pequeñez}.
+  Ésto es fuente de suma confusión para los principiantes.}
 
-Or, if for any purpose we were to take $1$~per~cent.\
-(\IE~$\frac{1}{100}$) as a \emph{small} fraction, then $1$~per~cent.\ of
-$1$~per~cent.\ (\IE~$\frac{1}{10,000}$) would be a small fraction
-of the second order of smallness; and $\frac{1}{1,000,000}$ would
+O, si por cualquier propósito fuésemos a tomar un $1$~por~ciento.\
+(\IE~$\frac{1}{100}$) a manera de \emph{pequeña} fracción, 
+entonces $1$~por~ciento de $1$~por~ciento (\IE~$\frac{1}{10,000}$) 
+sería una pequeña fracción
+del segundo órden de pequeñez; y $\frac{1}{1,000,000}$ sería
 \DPPageSep{017.png}{5}%
-be a small fraction of the third order of smallness,
-being $1$~per~cent.\ of $1$~per~cent.\ of $1$~per~cent.
+una pequeña fracción del tercer órden de pequeñez,
+siendo $1$~por~ciento de $1$~por~ciento de $1$~por~ciento.
 
-Lastly, suppose that for some very precise purpose
-we should regard $\frac{1}{1,000,000}$ as ``small.'' Thus, if a
-first-rate chronometer is not to lose or gain more than
-half a minute in a year, it must keep time with an
-accuracy of $1$~part in $1,051,200$. Now if, for such a
-purpose, we regard $\frac{1}{1,000,000}$ (or one millionth) as a
-small quantity, then $\frac{1}{1,000,000}$ of $\frac{1}{1,000,000}$, that is
-$\frac{1}{1,000,000,000,000}$ (or one billionth) will be a small
-quantity of the second order of smallness, and may
-be utterly disregarded, by comparison.
+Finalmente, supóngase que debido a algún propósito muy preciso
+debemos considerar $\frac{1}{1,000,000}$ como una cantidad ``pequeña.'' 
+Por lo tanto, para que un cronómetro de la más alta calidad
+no pierda o gane más de medio minuto en un año,
+debe mantener el tiempo con una precisión de $1$~parte en $1,051,200$. 
+Ahora bien, si para tal propósito consideramos $\frac{1}{1,000,000}$ 
+(una millonésima) como una cantidad pequeña, 
+entonces $\frac{1}{1,000,000}$ de $\frac{1}{1,000,000}$, es decir
+$\frac{1}{1,000,000,000,000}$ (una billonésima), será una pequeña
+cantidad del segundo órden de pequeñez y puede ser 
+ignorada por completo en comparación.
 
-Then we see that the smaller a small quantity itself
-is, the more negligible does the corresponding small
-quantity of the second order become. Hence we
-know that \emph{in all cases we are justified in neglecting
-the small quantities of the second---or third \emph{(or
-higher)}---orders}, if only we take the small quantity
-of the first order small enough in itself.
+De éste modo vemos que, mientras más pequeña sea una pequeña 
+cantidad en sí misma, más insignificante se vuelve la cantidad pequeña
+del segundo órden. Por ello sabemos que \emph{en todos podemos 
+justificar el ignorar las pequeñas cantidades
+de segundo---o tercer \emph{(o más alto)}---órden}, si tan solo 
+tomamos una pequeña cantidad del primer órden que sea 
+suficientemente pequeña en sí misma.
 
-But, it must be remembered, that small quantities
-if they occur in our expressions as factors multiplied
-by some other factor, may become important if the
-other factor is itself large. Even a farthing becomes
-important if only it is multiplied by a few hundred.
+Pero hay que recordar que, si las cantidades pequeñas
+ocurren en nuestras expresiones como factores multiplicados 
+por otro factor, pueden volverse importantes si el otro factor 
+es en sí mismo grande. Incluso un farthing se vuelve 
+importante si es multiplicado por unas cuantas centenas.
 
-Now in the calculus we write $dx$ for a little bit
-of~$x$. These things such as~$dx$, and~$du$, and~$dy$, are
-called ``differentials,'' the differential of~$x$, or of~$u$,
-or of~$y$, as the case may be. [You \emph{read} them as
-\emph{dee-eks}, or \emph{dee-you}, or \emph{dee-wy}.] If $dx$ be a small bit
-of~$x$, and relatively small of itself, it does not follow
+Ahora bien, en el cálculo escribimos $dx$ queriendo decir un poquito 
+de~$x$. A estas cosas como~$dx$, y~$du$, y~$dy$, se les 
+llama ``diferenciales,'' el diferencial de~$x$, o de~$u$,
+o de~$y$, dependiendo del caso. [Se \emph{léen} como
+\emph{de-equis}, o \emph{de-u}, o \emph{de-y griega}.] Si $dx$ es
+un pedacito de~$x$ relativamente pequeño en sí mismo, no se desprende
 \DPPageSep{018.png}{6}%
-that such quantities as $x · dx$, or $x^2\, dx$, or $a^x\, dx$ are
-negligible. But $dx × dx$ would be negligible, being a
-small quantity of the second order.
+que cantidades tales como $x · dx$, o $x^2\, dx$, o $a^x\, dx$ sean 
+negligibles. Pero $dx × dx$ sería insignificante, siendo una 
+pequeña cantidad del segundo órden.
 
-A very simple example will serve as illustration.
+Un ejemplo muy simple servirá de ilustración.
 
-Let us think of $x$ as a quantity that can grow by
-a small amount so as to become $x + dx$, where $dx$~is
-the small increment added by growth. The square
-of this is $x^2 + 2x · dx + (dx)^2$. The second term is
-not negligible because it is a first-order quantity;
-while the third term is of the second order of smallness,
-being a bit of,
-a bit of $x^2$. Thus if we took
-$dx$ to mean numerically, say, $\frac{1}{60}$~of~$x$, then the second
-term would be $\frac{2}{60}$~of~$x^2$, whereas the third term would
-be $\frac{1}{3600}$~of~$x^2$. This last term is clearly less important
-than the second. But if we go further and take
-$dx$ to mean only $\frac{1}{1000}$~of~$x$, then the second term
-will be $\frac{2}{1000}$~of~$x^2$, while the third term will be
-only $\frac{1}{1,000,000}$~of~$x^2$.
+Pensemos en $x$ como una cantidad que puede crecer un poco 
+para convertirse en $x + dx$, donde $dx$~es
+el pequeño incremento añadido por dicho crecimiento. Ésto elevado
+al cuadrado es $x^2 + 2x · dx + (dx)^2$. El segundo término no es 
+insignificante porque se trata de una cantidad de primer órden; 
+en tanto que el tercer término es del segundo grado de pequeñez,
+siendo un poquito de un poquito de $x^2$. Por tanto, si asumimos 
+que $dx$ quiere decir numéricamente, por ejemplo, $\frac{1}{60}$~de~$x$, 
+entonces el segundo término será $\frac{2}{60}$~de~$x^2$, en tanto que
+el tercer término será $\frac{1}{3600}$~de~$x^2$. Éste último término 
+es claramente menos importante que el segundo. Pero si vamos más allá
+y asumimos que $dx$ significa únicamente $\frac{1}{1000}$~de~$x$, 
+entonces el segundo término será $\frac{2}{1000}$~de~$x^2$, mientras 
+que el tercer término será sólamente $\frac{1}{1,000,000}$~de~$x^2$.
 
 \Figure[1.5in]{018a}{1}
 
-Geometrically this may be depicted as follows:
-Draw a square (\Fig{1}) the side of which we will
-take to represent~$x$. Now suppose the square to
-grow by having a bit~$dx$ added to its size each
+Ésto puede ser ilustrado geométricamente como se muestra a 
+continuación: Dibuja un cuadrado (\Fig{1}) cuyo lado representaremos 
+con una~$x$. Ahora supón que el cuadrado crece al sumársele un 
+poquito~$dx$ a su tamaño en cada 
 \DPPageSep{019.png}{7}%
-way. The enlarged square is made up of the original
-square~$x^2$, the two rectangles at the top and on the
-right, each of which is of area $x · dx$ (or together
-$2x · dx$), and the little square at the top right-hand
-corner which is~$(dx)^2$. In \Fig{2} we have taken $dx$ as
+lado. El cuadrado extendido se constitue del cuadrado 
+original~$x^2$, los dos rectángulos en la parte superior
+y a la derecha, cada uno de los cuales tiene un area 
+$x · dx$ (o juntos $2x · dx$), y el cuadrito de la esquina superior 
+derecha que es ~$(dx)^2$. En la \Fig{2} hemos tomado $dx$ como
 \Figures[]{019a}{019b}{2}{3}
-quite a big fraction of $x$---about~$\frac{1}{5}$. But suppose we
-had taken it only $\frac{1}{100}$---about the thickness of an
-inked line drawn with a fine pen. Then the little
-corner square will have an area of only $\frac{1}{10,000}$ of~$x^2$,
-and be practically invisible. Clearly $(dx)^2$ is negligible
-if only we consider the increment~$dx$ to be itself
-small enough.
+una fracción más bien grande de $x$---aproximadamente~$\frac{1}{5}$. 
+Pero supón que hubiésemos tomado solamente 
+$\frac{1}{100}$---aproximadamente el grosor de una línea dibujada 
+con una pluma delgada. entonces el cuadrito de la esquina
+tendrá un area de solamente $\frac{1}{10,000}$ de~$x^2$,
+y será prácticamente invisible. Resulta claro que $(dx)^2$ 
+es desdeñable si solo consideramos el incremento ~$dx$ como
+suficientemente pequeño en sí mismo.
 
-Let us consider a simile.
+Consideremos un símil.
 
-Suppose a millionaire were to say to his secretary:
-next week I will give you a small fraction of any
-money that comes in to me. Suppose that the
-secretary were to say to his boy: I will give you a
-small fraction of what I get. Suppose the fraction
-in each case to be $\frac{1}{100}$ part. Now if Mr.~Millionaire
-received during the next week £$1000$, the secretary
+Supón que un millonario le dice a su secretario:
+la próxima semana le daré una pequeña fracción de todo el 
+dinero que gane. Supón ahora  que el secretario 
+le dice a su hijito: Te daré una pequeña fracción de lo que 
+yo gane. Supon que la fracción en cada caso es la $\frac{1}{100}$ parte. 
+Ahora, si el Sr.~Millionario
+recibe durante la semana siguiente £$1000$, el secretario
 \DPPageSep{020.png}{8}%
-would receive £$10$ and the boy $2$~shillings. Ten
-pounds would be a small quantity compared with
-£$1000$; but two shillings is a small small quantity
-indeed, of a very secondary order. But what would
-be the disproportion if the fraction, instead of being~$\frac{1}{100}$,
-had been settled at $\frac{1}{1000}$ part? Then, while
-Mr.~Millionaire got his £$1000$, Mr.~Secretary would
-get only~£$1$, and the boy less than one farthing!
+recibiría £$10$ y el niño $2$~shillings. Diez libras
+son una cantidad pequeña en comparación con £$1000$; 
+pero dos shillings son de hecho una cantidad muy pequeña, 
+de un muy segundo orden. Pero, ¿cuál sería la desproporción
+si la fracción, en lugar de ser, ~$\frac{1}{100}$,
+hubiese sido acordada como la $\frac{1}{1000}$ parte? Entonces, 
+mientras el Sr.~Millionario obtiene sus £$1000$, el Sr.~Secretario
+sólamente obtendría~£$1$, ¡y el niño menos de un farthing!
 
-The witty Dean Swift\footnote
-  {\textit{On Poetry: a Rhapsody} (p.~20), printed 1733---usually misquoted.}
-once wrote:\enlargethispage{12pt}
+El ingenioso Dean Swift\footnote
+  {\textit{Sobre la Poesía: Una Rapsodia} (p.~20), impreso en 1733---y 
+  usualmente mal citado.}
+escribió una vez:\enlargethispage{12pt}
 \begin{center}\small%
 \settowidth{\TmpLen}{``And these have smaller Fleas to bite 'em,}%
 \begin{minipage}{\TmpLen}\raggedright
@@ -1275,12 +1346,22 @@ once wrote:\enlargethispage{12pt}
 \end{minipage}
 \end{center}
 
-An ox might worry about a flea of ordinary
-size---a small creature of the first order of smallness.
-But he would probably not trouble himself about a
-flea's flea; being of the second order of smallness, it
-would be negligible. Even a gross of fleas' fleas
-would not be of much account to the ox.
+\begin{center}\small%
+\settowidth{\TmpLen}{``Y estas tienen pulgas más pequeñas que las muerdan,}%
+\begin{minipage}{\TmpLen}\raggedright
+``Pues, observan los Naturalistas, una Pulga\\
+``Tiene Pulgas más pequeñas de que quienes es presa.\\
+``Y éstas tienen Pulgas más pequeñas que las muerdan,\\
+``Y así proceden \textit{ad infinitum}.''
+\end{minipage}
+\end{center}
+
+Un buey tal vez se inquiete por una pulga de tamaño 
+ordinario---una pequeña criatura del primer orden de pequeñez.
+Pero probablemente no se preocupa acerca de las pulgas de 
+una pulga que, siendo del segundo orden de pequeñez, serán
+insignificantes. Incluso una docena de pulgas de la pulga
+no serán de mucha notoriedad para el buey.
 \DPPageSep{021.png}{9}%
 
 
